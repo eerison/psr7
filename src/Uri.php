@@ -525,6 +525,9 @@ class Uri implements UriInterface, \JsonSerializable
         return $new;
     }
 
+    /**
+     * @return mixed
+     */
     public function jsonSerialize()
     {
         return $this->__toString();
